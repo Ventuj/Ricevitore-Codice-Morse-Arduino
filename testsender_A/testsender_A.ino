@@ -1,17 +1,22 @@
-int led = 5;
+int led = 13;
+
 void setup() {
   pinMode(led, OUTPUT);
 }
 
 void loop() {
-  c();
-  i();
-  a();
-  o();
+  v();
   fine();
 }
 
-
+void spazio(){
+  L();
+  P();
+  P();
+  P();
+  L();
+  T();
+}
 
 void b(){
   L();
@@ -99,6 +104,48 @@ void p(){
   T();
 }
 
+void q(){
+  L();
+  L();
+  P();
+  L();
+  T();
+}
+
+void r(){
+  P();
+  L();
+  P();
+  T();
+}
+
+void s(){
+  P();
+  P();
+  P();
+  T();
+}
+
+void t(){
+  L();
+  T();
+}
+
+void u(){
+  P();
+  P();
+  L();
+  T();
+}
+
+void v(){
+  P();
+  P();
+  P();
+  L();
+  T();
+}
+
 void o(){
   L();
   L();
@@ -154,5 +201,5 @@ void T(){
   digitalWrite(led, HIGH);
   delay(2010);
   digitalWrite(led, LOW);
-  delay(5000);
+  delay(8000);
 }
