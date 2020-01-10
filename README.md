@@ -35,4 +35,8 @@ Entrambi i dispositivi, una volta inviato o ricevuto il carattere/testo, lo memo
 
 
 # Testing
-Per il testing del ricevitore è stato utilizzato un semplice programma caricato su un Arduino Nano R3
+Ho sviluppato 2 versioni dello stesso programma:
+- Versione definitiva: stampa il messaggio ricevuto sulla console seriale carattere per carattere
+- Versione di test/debug: stampa il messaggio sia su seriale sia su un display LCD 20x4, cosi da avere una maggior versatilità nel controllare il led che invia e il possibile risultato
+###### Altro
+Nella versione di test è presente un rozzo script per provare il ricevitore, questo script è stato usato per la calibratura del ricevitore, che a sua volta è stato ricalibrato con il programma sviluppato da Stangherlin Enrico dando riscontri più che positivi riguardo la prima calibratura
