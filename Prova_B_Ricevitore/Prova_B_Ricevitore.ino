@@ -42,10 +42,11 @@ void loop() {
       lcd.clear();
       frase += converter(ponte);
       printlcd(0,0,frase);
-      //Serial.println(ponte);
-      //lista = inserisciDopo(lista, ponte);
+      Serial.print(converter(ponte));
       if(ponte == ".-.-.-"){
         termine();
+        //Serial.println(frase);
+        Serial.println();
         frase = "";
       }
       ponte = "";
@@ -103,7 +104,7 @@ String converter(String var){
     }
   }
   if(!check){
-    for(int i = 0; i < 14; i++){
+    for(int i = 0; i < 15; i++){
       if(var == Caratteri[i][1]){
         ret = Caratteri[i][0];
       }
