@@ -26,7 +26,7 @@ void printlcd(int c1, int c2, String text){
   lcd.print(text);
 }
 
-void loop() {
+void loop() {  
   while(analogRead(res) > 0 && analogRead(res) < 200){
     //Serial.println(String(analogRead(res)));
     count++;
