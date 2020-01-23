@@ -26,11 +26,8 @@ void printlcd(int c1, int c2, String text){
   lcd.print(text);
 }
 
-void loop() {  
-  while(analogRead(res) > 0 && analogRead(res) < 200){
-    //Serial.println(String(analogRead(res)));
-    count++;
-  }
+void loop() {
+  c();
   if(count > 0){
     if(count >= 1000 && count < 4000){
       ponte += ".";
@@ -56,6 +53,12 @@ void loop() {
     count = 0;
   }
   delay(20);
+}
+void c(){
+  while(analogRead(res) > 800 && analogRead(res) < 1100){
+    //Serial.println(String(analogRead(res))); 
+    count++;
+  }
 }
 
 void termine(){

@@ -12,8 +12,7 @@ void setup() {
 }
 
 void loop() {
-  while(analogRead(res) > 0 && analogRead(res) < 200){
-    //Serial.println(String(analogRead(res)));
+  while(analogRead(res) > 800 && analogRead(res) < 1100){
     count++;
   }
   if(count > 0){
